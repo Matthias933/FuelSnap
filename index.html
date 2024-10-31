@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fuel Snap</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.1/dist/tesseract.min.js"></script>
+  </head>
+  <body>
+    <main>
+        <div class="mainContainer">
+            <h1>Fuel Snap</h1>
+        
+
+            <div class="inputContainer">
+              <input type="number" min="0.1" id="priceInput" placeholder="Pirce"/>
+              <input type="number" min="0.1" id="literInput" placeholder="Liter"/>
+            </div>
+            <div class="btnContainer">
+                <button id="uploadBtn" class="btnStyle">Upload</button>
+                <input type="file" id="fileInput" onchange="OnInputFileChange(event)" style="display:none;" />
+            </div>
+        
+            <div class="sumViewDiv">
+                <p>Total Spend</p>
+                <p id="literText">Liters: 0L</p>
+                <p id="priceText">Price: 0€</p>
+            </div>
+        
+            <div class="historyDiv">     
+                <div class="historyView">
+                  
+                </div>
+            </div>
+        </div>
+
+        <p class="Footer">© 2024 Fuel Snap. All rights reserved.</p>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
